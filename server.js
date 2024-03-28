@@ -1,7 +1,5 @@
 const production = process.env.NODE_ENV === "production"
-const clientUrl = production
-  ? "https://annieqqa.github.io/STEAMPictionary/"
-  : "http://localhost:1234"
+const clientUrl = production ? "http://localhost:1234" : "http://localhost:1234"
 
 const io = require("socket.io")(3000, {
   cors: {
